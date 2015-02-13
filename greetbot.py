@@ -10,7 +10,7 @@ seen_dict = Ddict(dict)
 @event('JOIN')
 @rule('.*')
 def greet(bot, trigger):
-    absent_threshold_in_seconds = 5
+    absent_threshold_in_seconds = 3600
     greets = ['hello','ello','hihi','welcome','hi']
     puncs = [':)',':)',':)','<3','<3',':D','^.^','^.^',':3']
     nick = trigger.nick
